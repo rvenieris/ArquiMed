@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26023F0920222BC8001ACBC8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F0820222BC8001ACBC8 /* main.swift */; };
+		26023F1E20222C63001ACBC8 /* MLClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F1520222C61001ACBC8 /* MLClassifier.swift */; };
+		26023F1F20222C63001ACBC8 /* EIMCSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F1620222C61001ACBC8 /* EIMCSegment.swift */; };
+		26023F2020222C63001ACBC8 /* EIMCMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F1720222C61001ACBC8 /* EIMCMeter.swift */; };
+		26023F2120222C63001ACBC8 /* HOGBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F1820222C62001ACBC8 /* HOGBuilder.swift */; };
+		26023F2220222C63001ACBC8 /* DataBaseGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F1920222C62001ACBC8 /* DataBaseGetter.swift */; };
+		26023F2320222C63001ACBC8 /* GammaCorrector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F1A20222C62001ACBC8 /* GammaCorrector.swift */; };
+		26023F2420222C63001ACBC8 /* LimitsChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F1B20222C62001ACBC8 /* LimitsChecker.swift */; };
+		26023F2520222C63001ACBC8 /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F1C20222C62001ACBC8 /* ImageResizer.swift */; };
+		26023F2620222C63001ACBC8 /* DataBaseReceiveNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F1D20222C63001ACBC8 /* DataBaseReceiveNotification.swift */; };
+		26023F2D20222C73001ACBC8 /* ArtifactAcquisition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F2720222C72001ACBC8 /* ArtifactAcquisition.swift */; };
+		26023F2E20222C73001ACBC8 /* DomainAttributesExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F2820222C72001ACBC8 /* DomainAttributesExtract.swift */; };
+		26023F2F20222C73001ACBC8 /* Interpretation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F2920222C72001ACBC8 /* Interpretation.swift */; };
+		26023F3020222C73001ACBC8 /* PreProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F2A20222C72001ACBC8 /* PreProcessing.swift */; };
+		26023F3120222C73001ACBC8 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F2B20222C72001ACBC8 /* Classification.swift */; };
+		26023F3220222C73001ACBC8 /* Segmentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F2C20222C73001ACBC8 /* Segmentation.swift */; };
+		26023F3B20222CD9001ACBC8 /* Image3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F3420222CD9001ACBC8 /* Image3D.swift */; };
+		26023F3C20222CD9001ACBC8 /* Image2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F3520222CD9001ACBC8 /* Image2D.swift */; };
+		26023F3D20222CD9001ACBC8 /* AnatomicSubStructureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F3620222CD9001ACBC8 /* AnatomicSubStructureType.swift */; };
+		26023F3E20222CD9001ACBC8 /* StandardBitmapLikeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F3820222CD9001ACBC8 /* StandardBitmapLikeImage.swift */; };
+		26023F3F20222CD9001ACBC8 /* HeicImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F3920222CD9001ACBC8 /* HeicImage.swift */; };
+		26023F4020222CD9001ACBC8 /* ExamPartSubStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F3A20222CD9001ACBC8 /* ExamPartSubStructure.swift */; };
+		26023F4320222DA7001ACBC8 /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F4220222DA7001ACBC8 /* Exam.swift */; };
+		26023F4520222DD0001ACBC8 /* ExamPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F4420222DD0001ACBC8 /* ExamPart.swift */; };
+		26023F4720222DE5001ACBC8 /* ExamType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F4620222DE5001ACBC8 /* ExamType.swift */; };
+		26023F4920222E5D001ACBC8 /* Characteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F4820222E5D001ACBC8 /* Characteristic.swift */; };
+		26023F4B20222E75001ACBC8 /* CharacteristicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F4A20222E75001ACBC8 /* CharacteristicType.swift */; };
+		26023F4D20222E97001ACBC8 /* NormalityValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F4C20222E97001ACBC8 /* NormalityValue.swift */; };
+		26023F4F20222EEC001ACBC8 /* ConfigDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F4E20222EEC001ACBC8 /* ConfigDAO.swift */; };
+		26023F5120222EF8001ACBC8 /* ModelDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F5020222EF8001ACBC8 /* ModelDAO.swift */; };
+		26023F5520222F29001ACBC8 /* EntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F5220222F28001ACBC8 /* EntityProtocol.swift */; };
+		26023F5620222F29001ACBC8 /* SystemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F5320222F29001ACBC8 /* SystemProtocol.swift */; };
+		26023F5720222F29001ACBC8 /* ComponentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F5420222F29001ACBC8 /* ComponentProtocol.swift */; };
+		26023F5A20222FAE001ACBC8 /* StandardsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F5920222FAE001ACBC8 /* StandardsExtensions.swift */; };
+		26023F5C2022343D001ACBC8 /* EntityComponentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F5B2022343D001ACBC8 /* EntityComponentProtocol.swift */; };
+		26023F5E20223A27001ACBC8 /* ApplicationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F5D20223A27001ACBC8 /* ApplicationContext.swift */; };
+		26023F6020223CE2001ACBC8 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F5F20223CE2001ACBC8 /* Entity.swift */; };
+		26023F6220223EF3001ACBC8 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F6120223EF3001ACBC8 /* Component.swift */; };
+		26023F6420224032001ACBC8 /* ECSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F6320224032001ACBC8 /* ECSProtocol.swift */; };
+		26023F662022737C001ACBC8 /* EntityComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F652022737C001ACBC8 /* EntityComponent.swift */; };
+		26023F6A20227B4A001ACBC8 /* ArquiMed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F6920227B4A001ACBC8 /* ArquiMed.swift */; };
+		26023F6C20227C49001ACBC8 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F6B20227C49001ACBC8 /* System.swift */; };
+		26023F6E20234365001ACBC8 /* SystemExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26023F6D20234365001ACBC8 /* SystemExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26023F0320222BC7001ACBC8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		26023F0520222BC8001ACBC8 /* ArquiMed */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ArquiMed; sourceTree = BUILT_PRODUCTS_DIR; };
+		26023F0820222BC8001ACBC8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		26023F1520222C61001ACBC8 /* MLClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLClassifier.swift; sourceTree = "<group>"; };
+		26023F1620222C61001ACBC8 /* EIMCSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EIMCSegment.swift; sourceTree = "<group>"; };
+		26023F1720222C61001ACBC8 /* EIMCMeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EIMCMeter.swift; sourceTree = "<group>"; };
+		26023F1820222C62001ACBC8 /* HOGBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOGBuilder.swift; sourceTree = "<group>"; };
+		26023F1920222C62001ACBC8 /* DataBaseGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseGetter.swift; sourceTree = "<group>"; };
+		26023F1A20222C62001ACBC8 /* GammaCorrector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GammaCorrector.swift; sourceTree = "<group>"; };
+		26023F1B20222C62001ACBC8 /* LimitsChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitsChecker.swift; sourceTree = "<group>"; };
+		26023F1C20222C62001ACBC8 /* ImageResizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
+		26023F1D20222C63001ACBC8 /* DataBaseReceiveNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseReceiveNotification.swift; sourceTree = "<group>"; };
+		26023F2720222C72001ACBC8 /* ArtifactAcquisition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtifactAcquisition.swift; sourceTree = "<group>"; };
+		26023F2820222C72001ACBC8 /* DomainAttributesExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainAttributesExtract.swift; sourceTree = "<group>"; };
+		26023F2920222C72001ACBC8 /* Interpretation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interpretation.swift; sourceTree = "<group>"; };
+		26023F2A20222C72001ACBC8 /* PreProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreProcessing.swift; sourceTree = "<group>"; };
+		26023F2B20222C72001ACBC8 /* Classification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		26023F2C20222C73001ACBC8 /* Segmentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segmentation.swift; sourceTree = "<group>"; };
+		26023F3420222CD9001ACBC8 /* Image3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image3D.swift; sourceTree = "<group>"; };
+		26023F3520222CD9001ACBC8 /* Image2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image2D.swift; sourceTree = "<group>"; };
+		26023F3620222CD9001ACBC8 /* AnatomicSubStructureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnatomicSubStructureType.swift; sourceTree = "<group>"; };
+		26023F3820222CD9001ACBC8 /* StandardBitmapLikeImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardBitmapLikeImage.swift; sourceTree = "<group>"; };
+		26023F3920222CD9001ACBC8 /* HeicImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeicImage.swift; sourceTree = "<group>"; };
+		26023F3A20222CD9001ACBC8 /* ExamPartSubStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamPartSubStructure.swift; sourceTree = "<group>"; };
+		26023F4220222DA7001ACBC8 /* Exam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
+		26023F4420222DD0001ACBC8 /* ExamPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamPart.swift; sourceTree = "<group>"; };
+		26023F4620222DE5001ACBC8 /* ExamType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamType.swift; sourceTree = "<group>"; };
+		26023F4820222E5D001ACBC8 /* Characteristic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characteristic.swift; sourceTree = "<group>"; };
+		26023F4A20222E75001ACBC8 /* CharacteristicType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicType.swift; sourceTree = "<group>"; };
+		26023F4C20222E97001ACBC8 /* NormalityValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalityValue.swift; sourceTree = "<group>"; };
+		26023F4E20222EEC001ACBC8 /* ConfigDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigDAO.swift; sourceTree = "<group>"; };
+		26023F5020222EF8001ACBC8 /* ModelDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDAO.swift; sourceTree = "<group>"; };
+		26023F5220222F28001ACBC8 /* EntityProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityProtocol.swift; sourceTree = "<group>"; };
+		26023F5320222F29001ACBC8 /* SystemProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemProtocol.swift; sourceTree = "<group>"; };
+		26023F5420222F29001ACBC8 /* ComponentProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentProtocol.swift; sourceTree = "<group>"; };
+		26023F5920222FAE001ACBC8 /* StandardsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardsExtensions.swift; sourceTree = "<group>"; };
+		26023F5B2022343D001ACBC8 /* EntityComponentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityComponentProtocol.swift; sourceTree = "<group>"; };
+		26023F5D20223A27001ACBC8 /* ApplicationContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationContext.swift; sourceTree = "<group>"; };
+		26023F5F20223CE2001ACBC8 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		26023F6120223EF3001ACBC8 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		26023F6320224032001ACBC8 /* ECSProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECSProtocol.swift; sourceTree = "<group>"; };
+		26023F652022737C001ACBC8 /* EntityComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityComponent.swift; sourceTree = "<group>"; };
+		26023F6920227B4A001ACBC8 /* ArquiMed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArquiMed.swift; sourceTree = "<group>"; };
+		26023F6B20227C49001ACBC8 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		26023F6D20234365001ACBC8 /* SystemExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26023F0220222BC7001ACBC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26023EFC20222BC7001ACBC8 = {
+			isa = PBXGroup;
+			children = (
+				26023F0720222BC8001ACBC8 /* ArquiMed */,
+				26023F5820222F98001ACBC8 /* Extensions */,
+				26023F0620222BC8001ACBC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26023F0620222BC8001ACBC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26023F0520222BC8001ACBC8 /* ArquiMed */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26023F0720222BC8001ACBC8 /* ArquiMed */ = {
+			isa = PBXGroup;
+			children = (
+				26023F1020222BE9001ACBC8 /* Model */,
+				26023F0F20222BD9001ACBC8 /* ECS */,
+				26023F68202276B6001ACBC8 /* Superclasses */,
+				26023F4120222D31001ACBC8 /* DAO */,
+			);
+			path = ArquiMed;
+			sourceTree = "<group>";
+		};
+		26023F0F20222BD9001ACBC8 /* ECS */ = {
+			isa = PBXGroup;
+			children = (
+				26023F1220222C31001ACBC8 /* System */,
+				26023F1120222C23001ACBC8 /* Protocols */,
+			);
+			path = ECS;
+			sourceTree = "<group>";
+		};
+		26023F1020222BE9001ACBC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26023F4620222DE5001ACBC8 /* ExamType.swift */,
+				26023F4220222DA7001ACBC8 /* Exam.swift */,
+				26023F4420222DD0001ACBC8 /* ExamPart.swift */,
+				26023F3320222CD9001ACBC8 /* ExamPartData */,
+				26023F3A20222CD9001ACBC8 /* ExamPartSubStructure.swift */,
+				26023F3620222CD9001ACBC8 /* AnatomicSubStructureType.swift */,
+				26023F4820222E5D001ACBC8 /* Characteristic.swift */,
+				26023F4A20222E75001ACBC8 /* CharacteristicType.swift */,
+				26023F4C20222E97001ACBC8 /* NormalityValue.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26023F1120222C23001ACBC8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				26023F6320224032001ACBC8 /* ECSProtocol.swift */,
+				26023F5320222F29001ACBC8 /* SystemProtocol.swift */,
+				26023F5B2022343D001ACBC8 /* EntityComponentProtocol.swift */,
+				26023F5220222F28001ACBC8 /* EntityProtocol.swift */,
+				26023F5420222F29001ACBC8 /* ComponentProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		26023F1220222C31001ACBC8 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				26023F0820222BC8001ACBC8 /* main.swift */,
+				26023F6920227B4A001ACBC8 /* ArquiMed.swift */,
+				26023F1320222C39001ACBC8 /* Entity */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		26023F1320222C39001ACBC8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				26023F2720222C72001ACBC8 /* ArtifactAcquisition.swift */,
+				26023F2A20222C72001ACBC8 /* PreProcessing.swift */,
+				26023F2C20222C73001ACBC8 /* Segmentation.swift */,
+				26023F2820222C72001ACBC8 /* DomainAttributesExtract.swift */,
+				26023F2B20222C72001ACBC8 /* Classification.swift */,
+				26023F2920222C72001ACBC8 /* Interpretation.swift */,
+				26023F1420222C48001ACBC8 /* Component */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		26023F1420222C48001ACBC8 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				26023F1D20222C63001ACBC8 /* DataBaseReceiveNotification.swift */,
+				26023F1920222C62001ACBC8 /* DataBaseGetter.swift */,
+				26023F1720222C61001ACBC8 /* EIMCMeter.swift */,
+				26023F1620222C61001ACBC8 /* EIMCSegment.swift */,
+				26023F1A20222C62001ACBC8 /* GammaCorrector.swift */,
+				26023F1820222C62001ACBC8 /* HOGBuilder.swift */,
+				26023F1C20222C62001ACBC8 /* ImageResizer.swift */,
+				26023F1B20222C62001ACBC8 /* LimitsChecker.swift */,
+				26023F1520222C61001ACBC8 /* MLClassifier.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		26023F3320222CD9001ACBC8 /* ExamPartData */ = {
+			isa = PBXGroup;
+			children = (
+				26023F3720222CD9001ACBC8 /* Conversors */,
+				26023F3420222CD9001ACBC8 /* Image3D.swift */,
+				26023F3520222CD9001ACBC8 /* Image2D.swift */,
+			);
+			path = ExamPartData;
+			sourceTree = "<group>";
+		};
+		26023F3720222CD9001ACBC8 /* Conversors */ = {
+			isa = PBXGroup;
+			children = (
+				26023F3820222CD9001ACBC8 /* StandardBitmapLikeImage.swift */,
+				26023F3920222CD9001ACBC8 /* HeicImage.swift */,
+			);
+			path = Conversors;
+			sourceTree = "<group>";
+		};
+		26023F4120222D31001ACBC8 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				26023F4E20222EEC001ACBC8 /* ConfigDAO.swift */,
+				26023F5020222EF8001ACBC8 /* ModelDAO.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		26023F5820222F98001ACBC8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				26023F5920222FAE001ACBC8 /* StandardsExtensions.swift */,
+				26023F5D20223A27001ACBC8 /* ApplicationContext.swift */,
+				26023F6D20234365001ACBC8 /* SystemExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		26023F68202276B6001ACBC8 /* Superclasses */ = {
+			isa = PBXGroup;
+			children = (
+				26023F6B20227C49001ACBC8 /* System.swift */,
+				26023F652022737C001ACBC8 /* EntityComponent.swift */,
+				26023F5F20223CE2001ACBC8 /* Entity.swift */,
+				26023F6120223EF3001ACBC8 /* Component.swift */,
+			);
+			path = Superclasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26023F0420222BC7001ACBC8 /* ArquiMed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26023F0C20222BC8001ACBC8 /* Build configuration list for PBXNativeTarget "ArquiMed" */;
+			buildPhases = (
+				26023F0120222BC7001ACBC8 /* Sources */,
+				26023F0220222BC7001ACBC8 /* Frameworks */,
+				26023F0320222BC7001ACBC8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArquiMed;
+			productName = ArquiMed;
+			productReference = 26023F0520222BC8001ACBC8 /* ArquiMed */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26023EFD20222BC7001ACBC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "LES.PUC-RIO";
+				TargetAttributes = {
+					26023F0420222BC7001ACBC8 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 26023F0020222BC7001ACBC8 /* Build configuration list for PBXProject "ArquiMed" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 26023EFC20222BC7001ACBC8;
+			productRefGroup = 26023F0620222BC8001ACBC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26023F0420222BC7001ACBC8 /* ArquiMed */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26023F0120222BC7001ACBC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26023F662022737C001ACBC8 /* EntityComponent.swift in Sources */,
+				26023F3020222C73001ACBC8 /* PreProcessing.swift in Sources */,
+				26023F6220223EF3001ACBC8 /* Component.swift in Sources */,
+				26023F2F20222C73001ACBC8 /* Interpretation.swift in Sources */,
+				26023F0920222BC8001ACBC8 /* main.swift in Sources */,
+				26023F3B20222CD9001ACBC8 /* Image3D.swift in Sources */,
+				26023F5120222EF8001ACBC8 /* ModelDAO.swift in Sources */,
+				26023F2020222C63001ACBC8 /* EIMCMeter.swift in Sources */,
+				26023F5620222F29001ACBC8 /* SystemProtocol.swift in Sources */,
+				26023F2E20222C73001ACBC8 /* DomainAttributesExtract.swift in Sources */,
+				26023F1F20222C63001ACBC8 /* EIMCSegment.swift in Sources */,
+				26023F3F20222CD9001ACBC8 /* HeicImage.swift in Sources */,
+				26023F2620222C63001ACBC8 /* DataBaseReceiveNotification.swift in Sources */,
+				26023F2320222C63001ACBC8 /* GammaCorrector.swift in Sources */,
+				26023F4920222E5D001ACBC8 /* Characteristic.swift in Sources */,
+				26023F3D20222CD9001ACBC8 /* AnatomicSubStructureType.swift in Sources */,
+				26023F6420224032001ACBC8 /* ECSProtocol.swift in Sources */,
+				26023F2D20222C73001ACBC8 /* ArtifactAcquisition.swift in Sources */,
+				26023F2220222C63001ACBC8 /* DataBaseGetter.swift in Sources */,
+				26023F5E20223A27001ACBC8 /* ApplicationContext.swift in Sources */,
+				26023F2420222C63001ACBC8 /* LimitsChecker.swift in Sources */,
+				26023F5520222F29001ACBC8 /* EntityProtocol.swift in Sources */,
+				26023F6C20227C49001ACBC8 /* System.swift in Sources */,
+				26023F4020222CD9001ACBC8 /* ExamPartSubStructure.swift in Sources */,
+				26023F3220222C73001ACBC8 /* Segmentation.swift in Sources */,
+				26023F2120222C63001ACBC8 /* HOGBuilder.swift in Sources */,
+				26023F5720222F29001ACBC8 /* ComponentProtocol.swift in Sources */,
+				26023F4720222DE5001ACBC8 /* ExamType.swift in Sources */,
+				26023F2520222C63001ACBC8 /* ImageResizer.swift in Sources */,
+				26023F4320222DA7001ACBC8 /* Exam.swift in Sources */,
+				26023F6020223CE2001ACBC8 /* Entity.swift in Sources */,
+				26023F4520222DD0001ACBC8 /* ExamPart.swift in Sources */,
+				26023F1E20222C63001ACBC8 /* MLClassifier.swift in Sources */,
+				26023F6A20227B4A001ACBC8 /* ArquiMed.swift in Sources */,
+				26023F6E20234365001ACBC8 /* SystemExtensions.swift in Sources */,
+				26023F3120222C73001ACBC8 /* Classification.swift in Sources */,
+				26023F3E20222CD9001ACBC8 /* StandardBitmapLikeImage.swift in Sources */,
+				26023F3C20222CD9001ACBC8 /* Image2D.swift in Sources */,
+				26023F5C2022343D001ACBC8 /* EntityComponentProtocol.swift in Sources */,
+				26023F4B20222E75001ACBC8 /* CharacteristicType.swift in Sources */,
+				26023F5A20222FAE001ACBC8 /* StandardsExtensions.swift in Sources */,
+				26023F4F20222EEC001ACBC8 /* ConfigDAO.swift in Sources */,
+				26023F4D20222E97001ACBC8 /* NormalityValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		26023F0A20222BC8001ACBC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26023F0B20222BC8001ACBC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		26023F0D20222BC8001ACBC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JT55BTWL93;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		26023F0E20222BC8001ACBC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JT55BTWL93;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26023F0020222BC7001ACBC8 /* Build configuration list for PBXProject "ArquiMed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26023F0A20222BC8001ACBC8 /* Debug */,
+				26023F0B20222BC8001ACBC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26023F0C20222BC8001ACBC8 /* Build configuration list for PBXNativeTarget "ArquiMed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26023F0D20222BC8001ACBC8 /* Debug */,
+				26023F0E20222BC8001ACBC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26023EFD20222BC7001ACBC8 /* Project object */;
+}
